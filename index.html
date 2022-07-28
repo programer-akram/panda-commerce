@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda Commerce</title>
     <link rel="stylesheet" href="compilers/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="mx-5">
 
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -25,13 +26,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Bagpack</a>
+                            <a class="nav-link" href="#bagpack">Bagpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                     
@@ -43,7 +44,7 @@
 <section class="mt-5">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active bg-info">
+            <div class="carousel-item active panda-bg-info">
                 <div class="row">
                     <div class="col-lg-7 d-flex align-items-center p-5">
                        <div>
@@ -59,7 +60,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="carousel-item bg-info">
+                <div class="carousel-item panda-bg-info">
                     <div class="row">
                         <div class="col-lg-7 d-flex align-items-center p-5">
                             <div>
@@ -75,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item bg-info">
+                <div class="carousel-item panda-bg-info">
                   <div class="row">
                                     <div class="col-lg-7 d-flex align-items-center p-5">
                                         <div>
@@ -142,7 +143,7 @@
     <!-- Categories end -->
 
     <!-- shoes section start -->
-    <section class="my-5">
+    <section class="my-5" id="shoes">
         <h1>Shoes</h1>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -194,9 +195,9 @@
 
     <!-- Bagpack section start-->
 
-   <section class="my-5">
+   <section class="my-5" id="bagpack">
         <h1>Backpacks</h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3  g-4">
         <div class="col">
             <div class="card h-100 border border-0 shadow-lg">
                 <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
@@ -247,9 +248,25 @@
     
     <!-- Bagpack section end -->
 
+    <!-- Subscribe section start -->
+
+    <section style="height:300px;" class=" d-flex flex-column justify-content-center align-items-center panda-bg-info rounded " id="subscribe">
+       <div>
+        <h2>LET'S STAY IN TOUCH</h2>
+        <p>Get updates on sales specials and more</p>
+        <div class="col-sm-10 d-flex">
+            <input type="email" class="" placeholder="Enter your email" id="inputPassword">
+        <button class="bg-danger rounded text-white">Subscribe</button>
+       </div>
+    </div>
+
+    </section>
 
 
-    </main>
+    <!-- Subscribe section end -->
+</main>
+
+<footer class="text-center mt-5"><small>@2018. Panda Commerce. All right reserved. Sofia, Bugaria.</small></footer>
     <script src="compilers/bootstrap.min.js"></script>
 </body>
 </html>
